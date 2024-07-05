@@ -1,0 +1,54 @@
+/* :root {
+    --text:
+    --background:
+    --primary: 
+    --secondary:
+    --accent:
+} */
+
+body {
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 3;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.logo{
+    font-family: "Hammersmith One";
+    font-size: 50px;
+}
+
+.imagetxt {
+    font-family: "Bowlby One";
+    font-size: 80px;
+    text-align: center;
+    margin-top: 150px;
+    color:white;
+}
+  
+
+.images {
+    background-image: url(images/taiki-ishikawa.jpg);
+    background-size: cover;
+
+    
+    flex: 2;
+    height: 100vh;
+}
