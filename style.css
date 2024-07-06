@@ -1,54 +1,73 @@
-/* :root {
-    --text:
-    --background:
-    --primary: 
-    --secondary:
-    --accent:
-} */
+ :root {
+     --background: hsl(60, 56%, 96%);
+     --image-accent: rgb(158, 0, 0)    ;
+ }
 
-body {
-    background-color: var(--background);
+ body {
+     background-color: var(--background);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     padding: 0;
+     margin: 0;
+ }
+
+ /* The whole container */
+ .container {
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     flex: 3;
+ }
+
+ .header {
+     display: flex;
+     justify-content: space-between;
+     padding: 15px;
+ }
+
+ .logo {
+     font-family: "Hammersmith One";
+     font-size: 50px;
+ }
+
+
+ /* Images side */
+ .shadow {
+     width: 20px;
+     height: 100vh;
+     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.672), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.105), rgba(0, 0, 0, 0));
+ }
+
+ .imagetxt {
+     font-family: "Bowlby One";
+     font-size: 80px;
+     width: 100%;
+     text-align: center;
+     height: fit-content;
+
+    margin-bottom: -80px;
+     color: var(--image-accent);
+ }
+ .secondary{
+    color: #f5b40100;
+    -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--image-accent);
+ }
+
+ .txtHolder{
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 0;
-    margin: 0;
-}
-
-.container {
-    height: 100vh;
-    display: flex;
+    flex: 1;
     flex-direction: column;
-    justify-content: space-between;
-    flex: 3;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-}
-
-.logo{
-    font-family: "Hammersmith One";
-    font-size: 50px;
-}
-
-.imagetxt {
-    font-family: "Bowlby One";
-    font-size: 80px;
     text-align: center;
-    margin-top: 150px;
-    color:white;
-}
-  
+ }
 
-.images {
-    background-image: url(images/taiki-ishikawa.jpg);
-    background-size: cover;
-
-    
-    flex: 2;
-    height: 100vh;
-}
+ .images {
+     background-image: url(images/taiki-ishikawa.jpg);
+     background-size: cover;
+     flex: 2;
+     height: 100vh;
+     display: flex;
+ }
