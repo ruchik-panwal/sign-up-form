@@ -1,6 +1,6 @@
  :root {
      --background: hsl(60, 56%, 96%);
-     --image-accent: rgb(158, 0, 0)    ;
+     --image-accent: rgb(158, 0, 0);
  }
 
  body {
@@ -13,26 +13,64 @@
      margin: 0;
  }
 
+
  /* The whole container */
  .container {
      height: 100vh;
      display: flex;
      flex-direction: column;
      justify-content: space-between;
+     align-items: center;
      flex: 3;
  }
 
+ /* Header */
  .header {
      display: flex;
      justify-content: space-between;
      padding: 15px;
+     width: 100%;
  }
 
  .logo {
      font-family: "Hammersmith One";
      font-size: 50px;
+     margin-left: 15px;
  }
 
+ /* Form */
+ form {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     font-family: "Josefin Sans";
+ }
+
+ .gridLike {
+     display: flex;
+     justify-content: space-evenly;
+     margin-bottom: 50px;
+ }
+
+ .inputs {
+     display: flex;
+     flex-direction: column;
+     width: 20vw;
+ }
+
+ label {
+     margin-bottom: 5px;
+ }
+
+ input {
+     font-family: inherit;
+     height: 25px;
+     font-size: 16px;
+     border-style: solid;
+     border-color: rgb(104, 104, 104);
+    background-color: #ffffff;
+    padding: 5px;
+ }
 
  /* Images side */
  .shadow {
@@ -43,31 +81,43 @@
 
  .imagetxt {
      font-family: "Bowlby One";
-     font-size: 80px;
+     font-size: 4vw;
      width: 100%;
      text-align: center;
      height: fit-content;
 
-    margin-bottom: -80px;
+     margin-bottom: -80px;
      color: var(--image-accent);
  }
- .secondary{
-    color: #f5b40100;
-    -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--image-accent);
+
+ .secondary {
+     color: #f5b40100;
+     -webkit-text-stroke-width: 2px;
+     -webkit-text-stroke-color: var(--image-accent);
  }
 
- .txtHolder{
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    text-align: center;
+ .txtHolder {
+     display: flex;
+     flex: 1;
+     flex-direction: column;
+     text-align: center;
  }
 
  .images {
      background-image: url(images/taiki-ishikawa.jpg);
+     
+     background-color: rgb(128, 85, 34);
      background-size: cover;
      flex: 2;
      height: 100vh;
      display: flex;
+     user-select: none;
  }
+
+ /* .texture{
+    position: absolute;
+    width: 50px ;
+    height: 100vh;
+    background-color: #d8ad79;
+    opacity: 0.2;
+ } */
