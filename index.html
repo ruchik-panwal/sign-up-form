@@ -22,6 +22,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Chango&family=Hammersmith+One&display=swap"
         rel="stylesheet">
+
+    <!-- FontAwesome for theme Toggle -->
+    <script src="https://kit.fontawesome.com/befdb26257.js" crossorigin="anonymous"></script>
+
     <title>Sign Up</title>
 </head>
 
@@ -30,65 +34,74 @@
     <div class="container">
         <div class="header">
             <div class="logo">iMage</div>
-            <button class="themeToggle"></button>
+            <button class="themeToggle">
+                <!-- <i class="fa-solid fa-sun"></i> -->
+                <i class="fa-solid fa-moon"></i>
+            </button>
         </div>
+
+        <div class="introduction">welcome to your go to place for images :3</div>
 
         <form action="">
 
             <div class="gridLike">
                 <div class="inputs">
-                    <label for="firstName">FIRST NAME</label>
+                    <label for="firstName">FIRST NAME <div class="indicator"></div> </label>
                     <input type="text" id="firstName" placeholder="Walter">
                 </div>
 
                 <div class="inputs">
-                    <label for="lastName">LAST NAME</label>
+                    <label for="lastName">LAST NAME <div class="indicator"></div></label>
                     <input type="text" id="lastName" placeholder="White">
                 </div>
             </div>
 
             <div class="gridLike">
                 <div class="inputs">
-                    <label for="emailId">EMAIL</label>
+                    <label for="emailId">EMAIL <div class="indicator"></div></label>
                     <input type="email" id="emailId" placeholder="walter@gmail.com">
                 </div>
 
                 <div class="inputs">
-                    <label for="phoneNo">PHONE NO</label>
+                    <label for="phoneNo">PHONE NO <div class="indicator"></div></label>
                     <input type="tel" id="phoneNo" placeholder="12345 67890">
                 </div>
             </div>
 
             <div class="gridLike">
                 <div class="inputs">
-                    <label for="password">PASSWORD</label>
+                    <label for="password">PASSWORD <div class="indicator"></div></label>
                     <input type="password" id="password" placeholder="password">
                 </div>
 
                 <div class="inputs">
-                    <label for="cfrmPassword">CONFIRM PASSWORD</label>
+                    <label for="cfrmPassword">CONFIRM PASSWORD <div class="indicator"></div></label>
                     <input type="password" id="cfrmPassword" placeholder="password">
                 </div>
             </div>
 
+            <button class="signUpBtn">Sign Up</button>
+
         </form>
 
         <div class="footer">
-            <p>Disclaimer: This is not a real online service! This project is part of a course assignment for The Odin Project </p>
+            <p>Disclaimer: This is not a real online service! This project is part of a course assignment for The Odin
+                Project </p>
         </div>
     </div>
 
 
 
     <div class="images">
-        <div class="shadow"></div>
+        <!-- <div class="shadow"></div> -->
         <div class="txtHolder">
             <div class="imagetxt secondary">SIGN UP NOW!</div>
             <div class="imagetxt secondary">SIGN UP NOW!</div>
             <div class="imagetxt secondary">SIGN UP NOW!</div>
             <div class="imagetxt">SIGN UP NOW!</div>
         </div>
-        <div class="texture"></div>
+
+        <div class="credits">photo by <a href="https://unsplash.com/@fl__q?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="creator">Taiki Ishikawa</a> on <a class="picture" href="https://unsplash.com/photos/a-tall-red-building-with-a-tower-on-top-of-it-hpbP-_-vdb4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></div>
     </div>
 </body>
 

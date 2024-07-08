@@ -1,123 +1,218 @@
- :root {
-     --background: hsl(60, 56%, 96%);
-     --image-accent: rgb(158, 0, 0);
- }
+  :root {
+      --background: hsl(60, 56%, 96%);
+      --text-color: black;
+      --accent: white;
+      --image-accent: rgb(158, 0, 0);
+      font-size: 16px;
+  }
 
- body {
-     background-color: var(--background);
-     display: flex;
-     justify-content: center;
-     align-items: center;
+  /* :root .dark{
+      --background: black;
+      --text-color: white;
+      --accent: #282828;
+      --image-accent: rgb(158, 0, 0);
+      --signup-border: white;
+      font-size: 16px;
+  } */
 
-     padding: 0;
-     margin: 0;
- }
+  body {
+      background-color: var(--background);
+      color: var(--text-color);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 0;
+      margin: 0;
+  }
 
 
- /* The whole container */
- .container {
-     height: 100vh;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     align-items: center;
-     flex: 3;
- }
+  /* The whole container */
 
- /* Header */
- .header {
-     display: flex;
-     justify-content: space-between;
-     padding: 15px;
-     width: 100%;
- }
+  .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      flex: 3;
 
- .logo {
-     font-family: "Hammersmith One";
-     font-size: 50px;
-     margin-left: 15px;
- }
+      height: 100vh;
 
- /* Form */
- form {
-     display: flex;
-     flex-direction: column;
-     width: 100%;
-     font-family: "Josefin Sans";
- }
+  }
 
- .gridLike {
-     display: flex;
-     justify-content: space-evenly;
-     margin-bottom: 50px;
- }
+  /* Header */
 
- .inputs {
-     display: flex;
-     flex-direction: column;
-     width: 20vw;
- }
+  .header {
+      display: flex;
+      justify-content: space-between;
 
- label {
-     margin-bottom: 5px;
- }
+      padding: 15px;
+      width: 100%;
+  }
 
- input {
-     font-family: inherit;
-     height: 25px;
-     font-size: 16px;
-     border-style: solid;
-     border-color: rgb(104, 104, 104);
-    background-color: #ffffff;
-    padding: 5px;
- }
+  .logo {
+      font-family: "Hammersmith One";
+      margin-left: 15px;
+      font-size: 3rem;
+  }
 
- /* Images side */
- .shadow {
-     width: 20px;
-     height: 100vh;
-     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.672), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.105), rgba(0, 0, 0, 0));
- }
+  .introduction {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 2rem;
+  }
 
- .imagetxt {
-     font-family: "Bowlby One";
-     font-size: 4vw;
-     width: 100%;
-     text-align: center;
-     height: fit-content;
+  /* Form */
 
-     margin-bottom: -80px;
-     color: var(--image-accent);
- }
+  form {
+      font-family: "Josefin Sans";
 
- .secondary {
-     color: #f5b40100;
-     -webkit-text-stroke-width: 2px;
-     -webkit-text-stroke-color: var(--image-accent);
- }
+      display: flex;
+      flex-direction: column;
 
- .txtHolder {
-     display: flex;
-     flex: 1;
-     flex-direction: column;
-     text-align: center;
- }
+      width: 100%;
+      margin-top: 3vh;
+  }
 
- .images {
-     background-image: url(images/taiki-ishikawa.jpg);
-     
-     background-color: rgb(128, 85, 34);
-     background-size: cover;
-     flex: 2;
-     height: 100vh;
-     display: flex;
-     user-select: none;
- }
+  .gridLike {
+      display: flex;
+      justify-content: space-evenly;
 
- /* .texture{
-    position: absolute;
-    width: 50px ;
-    height: 100vh;
-    background-color: #d8ad79;
-    opacity: 0.2;
- } */
+      margin-bottom: 50px;
+  }
+
+  .inputs {
+      display: flex;
+      flex-direction: column;
+
+      width: 20vw;
+  }
+
+  label {
+      display: flex;
+      justify-content: space-between;
+
+      margin-bottom: 5px;
+      font-size: 1rem;
+  }
+
+  input {
+      font-family: inherit;
+      border-style: solid;
+
+      color: inherit;
+      border-color: rgb(104, 104, 104);
+      background-color: var(--accent);
+
+      font-size: 1rem;
+      padding: 5px;
+      height: 25px;
+  }
+
+  /* Images side */
+  /* .shadow {
+      width: 20px;
+      height: 100vh;
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.672), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.105), rgba(0, 0, 0, 0));
+      position: absolute;
+  } */
+
+
+  .imagetxt {
+      font-family: "Bowlby One";
+
+      color: var(--image-accent);
+
+      text-align: center;
+      height: fit-content;
+
+      font-size: 4vw;
+      width: 100%;
+      margin-bottom: -80px;
+
+  }
+
+  .secondary {
+      color: #f5b40100;
+      -webkit-text-stroke-color: var(--image-accent);
+      -webkit-text-stroke-width: 2px;
+  }
+
+  .txtHolder {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .images {
+      background-image: url(images/taiki-ishikawa.jpg);
+      background-size: cover;
+
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+
+      height: 100vh;
+      user-select: none;
+
+  }
+
+
+  .indicator {
+      background-color: rgb(114, 3, 3);
+
+      height: 0.8rem;
+      width: 0.8rem;
+      border-radius: 0.4rem;
+
+  }
+
+  .signUpBtn {
+      font-family: Arial, Helvetica, sans-serif;
+
+      border-style: solid;
+      background-color: rgb(19, 19, 19);
+      color: white;
+      border: var(--signup-border);
+
+      align-self: center;
+
+      border-radius: 5px;
+      font-size: 16px;
+      margin-top: 2vh;
+      width: 20vw;
+      height: 6vh;
+  }
+
+  .themeToggle {
+      background-color: var(--background);
+      border: var(--text-color);
+      color: var(--text-color);
+
+      height: 50px;
+      width: 50px;
+      margin-right: 15px;
+      border-width: 1px;
+      border-radius: 25px;
+      border-style: none;
+  }
+
+  .themeToggle:hover {
+      border-style: solid;
+  }
+
+  .fa-solid {
+      font-size: 30px;
+  }
+
+  .credits {
+      color: white;
+      font-family: "Josefin Sans";
+      align-self: flex-end;
+      margin: 10px;
+  }
+
+  a {
+      color: yellow;
+  }
