@@ -22,3 +22,17 @@ button.forEach((button) => {
 
     });
 });
+
+const input = document.querySelectorAll("input");
+
+
+input.forEach((input) => {
+
+    input.addEventListener("input", () => {
+
+        if (input.validity) {
+            const indicator = document.getElementById(input.id);
+            indicator.setAttribute("style" , "background-color : green;");
+        }
+    });
+});
