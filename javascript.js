@@ -8,16 +8,17 @@ button.forEach((button) => {
         if (button.className === "themeToggle") {
             const root = document.documentElement;
             root.className = root.className === 'dark' ? 'light' : 'dark';
-            
+
             const icon = document.querySelector("i");
-            const iconTheme = icon.className === 'fa-sun' ? 'fa-moon' : 'fa-sun';
-            console.log(iconTheme);
-            icon.className = "";
-            icon.classList.add("fa-solid" , iconTheme);
+            if (root.className === "dark") {
+                icon.classList.remove("fa-moon");
+                icon.classList.add("fa-sun");
+            }
+            else {
+                icon.classList.remove("fa-sun");
+                icon.classList.add("fa-moon");
+            }
         }
 
     });
 });
-
-function themeToggle(){
-}
