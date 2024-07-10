@@ -24,15 +24,24 @@ button.forEach((button) => {
 });
 
 const input = document.querySelectorAll("input");
+const password = document.querySelector("#password")
 
 
 input.forEach((input) => {
 
     input.addEventListener("input", () => {
 
-        if (input.validity) {
+        if (input.validity.valid) {
             const indicator = document.getElementById(input.id);
             indicator.setAttribute("style" , "background-color : green;");
         }
+
+        // if(input.id === "password"){
+
+        // }
+
+        // if(input.id === "cfrmPassword"){
+        //     console.log(input.textContent);
+        // }
     });
 });
