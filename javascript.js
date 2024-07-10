@@ -33,15 +33,15 @@ input.forEach((input) => {
 
         if (input.validity.valid) {
             const indicator = document.getElementById(input.id);
-            indicator.setAttribute("style" , "background-color : green;");
+            indicator.setAttribute("style", "background-color : green;");
         }
 
-        // if(input.id === "password"){
 
-        // }
-
-        // if(input.id === "cfrmPassword"){
-        //     console.log(input.textContent);
-        // }
+        if (input.id === "cfrmPassword") {
+            if (input.value != password.value) {
+                const passIndicator = document.getElementById(input.id);
+                passIndicator.setAttribute("style", "background-color : #be0606;");
+            }
+        }
     });
 });
