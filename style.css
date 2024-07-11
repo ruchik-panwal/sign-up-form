@@ -1,8 +1,11 @@
+  :root{
+    --image-accent: #AFB3A7;
+  }
+  
   :root.light {
       --background: hsl(60, 56%, 96%);
       --text-color: black;
       --accent: white;
-      --image-accent: rgb(158, 0, 0);
       font-size: 16px;
   }
 
@@ -10,7 +13,6 @@
       --background: black;
       --text-color: white;
       --accent: #282828;
-      --image-accent: rgb(158, 0, 0);
       --signup-border: white;
       font-size: 16px;
   }
@@ -109,26 +111,19 @@
       height: 25px;
   }
 
-  /* Images side */
-  /* .shadow {
-      width: 20px;
-      height: 100vh;
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.672), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.105), rgba(0, 0, 0, 0));
-      position: absolute;
-  } */
 
 
   .imagetxt {
       font-family: "Bowlby One";
 
-      color: var(--image-accent);
+      color: var(--image-accent) ;
 
       text-align: center;
       height: fit-content;
 
-      font-size: 4vw;
+      font-size: 4.3vw;
       width: 100%;
-      margin-bottom: -80px;
+      margin-bottom: -4vw;
 
   }
 
@@ -146,7 +141,6 @@
   }
 
   .images {
-      background-image: url(images/taiki-ishikawa.jpg);
       background-size: cover;
 
       flex: 2;
